@@ -16,4 +16,6 @@ body {
 
 header {
     background-color: var(--element-bg-color);
+    width: 100%;
+    position: fixed;
 }
