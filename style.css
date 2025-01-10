@@ -10,6 +10,7 @@
     --element-bg-color: #fff;
     --text-color: #000;
     --border-color: #bbb;
+    --element-hover-color: #fcfcfc;
 }
 
 body {
@@ -48,17 +49,37 @@ main {
     gap: 1rem;
 }
 
-main div {
+main a {
     border-radius: 10px;
     border: 1px solid var(--border-color);
     background-color: var(--element-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+main a:hover {
+    transform: translateY(-1px);
+    background-color: var(--element-hover-color);
+    cursor: pointer;
 }
 
 #big-box {
-    grid-area: big
+    grid-area: big;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#big-box h5 {
+    font-size: 1.5rem;
+}
+
+#big-box img {
+    object-fit: contain;
+    width: 80%;
 }
 
 #small1 {
